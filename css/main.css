@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Alata", sans-serif;
+  font-size: 1.5rem;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+}
+/*# sourceMappingURL=main.css.map */
