@@ -20,7 +20,6 @@ body {
   font-size: 1.5rem;
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.6;
 }
 
 .container {
@@ -30,12 +29,14 @@ body {
   padding: 0 5%;
 }
 
-.heading-1 {
+.heading-1, .heading-2 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 7.11rem;
-  text-transform: uppercase;
-  line-height: 1;
   font-weight: 300;
+  text-transform: uppercase;
+}
+
+.heading-1 {
+  font-size: 7.11rem;
 }
 
 .heading-1--dark {
@@ -43,6 +44,18 @@ body {
 }
 
 .heading-1--light {
+  color: white;
+}
+
+.heading-2 {
+  font-size: 4.8rem;
+}
+
+.heading-2--dark {
+  color: black;
+}
+
+.heading-2--light {
   color: white;
 }
 
@@ -122,5 +135,31 @@ body {
 .nav__link {
   text-decoration: none;
   color: white;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10rem;
+}
+
+.about__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.about__details {
+  max-width: 60rem;
+  margin: 18.3rem 0 0 -16.2rem;
+  padding: 9.6rem 0 0 9.6rem;
+  background-color: white;
+}
+
+.about__history {
+  color: #8c8c8c;
+  margin-top: 2rem;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=main.css.map */
