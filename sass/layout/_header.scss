@@ -1,0 +1,46 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(rgba($clrBlack, 0.4), rgba($clrBlack, 0.4)),
+    url(../../images/desktop/image-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 0;
+
+  & .hamburger {
+    height: 100%;
+    display: none;
+  }
+
+  &__title {
+    border: 1px solid $clrWhite;
+    max-width: 65.5rem;
+    margin-top: 13.4rem;
+    padding: 4rem;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    @include underlineAnimation;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $clrWhite;
+  }
+}

@@ -9,6 +9,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,4 +18,11 @@ body {
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
   line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 5%;
 }

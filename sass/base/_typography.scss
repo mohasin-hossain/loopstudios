@@ -1,0 +1,10 @@
+.heading-1 {
+    font-family: $heading-font;
+    font-size: 7.11rem;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 300;
+
+    &--dark { color: $clrBlack; };
+    &--light { color: $clrWhite; };
+}
