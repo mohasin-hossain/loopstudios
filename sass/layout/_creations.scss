@@ -1,0 +1,103 @@
+.creations {
+  margin: 10rem;
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3rem;
+    margin-top: 3rem;
+  }
+
+  &__gallery > div {
+    height: 45rem;
+    color: $clrWhite;
+    display: flex;
+    align-items: flex-end;
+    padding: 3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+      transform: scale(1.06);
+    }
+  }
+
+  %image {
+    background-size: cover;
+  }
+
+  &__item-1 {
+    background-image: linear-gradient(
+        rgba(#000, 0),
+        rgba(#000, 0.3)
+      ),
+      url(../../images/desktop/image-deep-earth.jpg);
+    @extend %image;
+  }
+
+  &__item-2 {
+    background-image: linear-gradient(
+        rgba(#000, 0),
+        rgba(#000, .3)
+      ),
+      url(../../images/desktop/image-night-arcade.jpg);
+    @extend %image;
+  }
+
+  &__item-3 {
+    background-image: linear-gradient(
+        rgba(#000, 0),
+        rgba(#000, .3)
+      ),url(../../images/desktop/image-soccer-team.jpg);
+    @extend %image;
+  }
+
+  &__item-4 {
+    background-image: linear-gradient(
+      rgba(#000, 0),
+      rgba(#000, .3)
+    ),url(../../images/desktop/image-grid.jpg);
+    @extend %image;
+  }
+
+  &__item-5 {
+    background-image: linear-gradient(
+      rgba(#000, 0),
+      rgba(#000, .3)
+    ),url(../../images/desktop/image-from-above.jpg);
+    @extend %image;
+  }
+
+  &__item-6 {
+    background-image: linear-gradient(
+      rgba(#000, 0),
+      rgba(#000, .3)
+    ), url(../../images/desktop/image-pocket-borealis.jpg);
+    @extend %image;
+  }
+
+  &__item-7 {
+    background-image: linear-gradient(
+      rgba(#000, 0),
+      rgba(#000, .3)
+    ), url(../../images/desktop/image-curiosity.jpg);
+    @extend %image;
+
+  }
+
+  &__item-8 {
+    background-image:linear-gradient(
+      rgba(#000, 0),
+      rgba(#000, .3)
+    ), url(../../images/desktop/image-fisheye.jpg);
+    @extend %image;
+  }
+}

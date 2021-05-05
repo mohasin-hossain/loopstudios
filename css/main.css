@@ -29,7 +29,7 @@ body {
   padding: 0 5%;
 }
 
-.heading-1, .heading-2 {
+.heading-1, .heading-2, .heading-3 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
@@ -57,6 +57,31 @@ body {
 
 .heading-2--light {
   color: white;
+}
+
+.heading-3 {
+  font-size: 3rem;
+}
+
+.btn {
+  font-family: "Alata", sans-serif;
+  font-weight: 300;
+  height: 4.2rem;
+  width: 15.9rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: white;
+  border: 2px solid #8c8c8c;
+  border-radius: .5rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  padding-bottom: .3rem;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
 }
 
 .header {
@@ -161,5 +186,94 @@ body {
   color: #8c8c8c;
   margin-top: 2rem;
   line-height: 1.5;
+}
+
+.creations {
+  margin: 10rem;
+}
+
+.creations__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.creations__gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 3rem;
+  margin-top: 3rem;
+}
+
+.creations__gallery > div {
+  height: 45rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 3rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.creations__gallery > div:hover, .creations__gallery > div:focus {
+  opacity: 0.5;
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+}
+
+.creations .creations__item-1, .creations .creations__item-2, .creations .creations__item-3, .creations .creations__item-4, .creations .creations__item-5, .creations .creations__item-6, .creations .creations__item-7, .creations .creations__item-8 {
+  background-size: cover;
+}
+
+.creations__item-1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url(../../images/desktop/image-deep-earth.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../../images/desktop/image-deep-earth.jpg);
+}
+
+.creations__item-2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url(../../images/desktop/image-night-arcade.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../../images/desktop/image-night-arcade.jpg);
+}
+
+.creations__item-3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url(../../images/desktop/image-soccer-team.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../../images/desktop/image-soccer-team.jpg);
+}
+
+.creations__item-4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url(../../images/desktop/image-grid.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../../images/desktop/image-grid.jpg);
+}
+
+.creations__item-5 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url(../../images/desktop/image-from-above.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../../images/desktop/image-from-above.jpg);
+}
+
+.creations__item-6 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url(../../images/desktop/image-pocket-borealis.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../../images/desktop/image-pocket-borealis.jpg);
+}
+
+.creations__item-7 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url(../../images/desktop/image-curiosity.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../../images/desktop/image-curiosity.jpg);
+}
+
+.creations__item-8 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url(../../images/desktop/image-fisheye.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../../images/desktop/image-fisheye.jpg);
 }
 /*# sourceMappingURL=main.css.map */

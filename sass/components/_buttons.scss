@@ -1,0 +1,19 @@
+.btn {
+  font-family: $body-font;
+  font-weight: 300;
+  height: 4.2rem;
+  width: 15.9rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: $clrWhite;
+  border: 2px solid $clrDarkGray;
+  border-radius: .5rem;
+  transition: all 0.4s;
+  padding-bottom: .3rem;
+
+  &:hover {
+    background-color: $clrBlack;
+    color: $clrWhite;
+    border: 2px solid $clrBlack;
+  }
+}
