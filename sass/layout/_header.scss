@@ -1,7 +1,7 @@
 .header {
   height: 100vh;
   background-image: linear-gradient(rgba($clrBlack, 0.4), rgba($clrBlack, 0.4)),
-    url('../../images/desktop/image-hero.jpg');
+    url('../images/desktop/image-hero.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
 
   @include respond(small-phone) {
     background-image:linear-gradient(rgba($clrBlack, 0.1), rgba($clrBlack, 0.1)),
-    url('../../images/mobile/image-hero.jpg');
+    url('../images/mobile/image-hero.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -56,89 +56,89 @@
 
   &__item-1 {
     background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-      url(../../images/desktop/image-deep-earth.jpg);
+      url('../images/desktop/image-deep-earth.jpg');
     @extend %image;
 
     @include respond(phone) {
       background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-        url(../../images/mobile/image-deep-earth.jpg);
+        url('../images/mobile/image-deep-earth.jpg');
     }
   }
 
   &__item-2 {
     background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-      url(../../images/desktop/image-night-arcade.jpg);
+      url('../images/desktop/image-night-arcade.jpg');
     @extend %image;
 
     @include respond(phone) {
       background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-        url(../../images/mobile/image-night-arcade.jpg);
+        url('../images/mobile/image-night-arcade.jpg');
     }
   }
 
   &__item-3 {
     background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-      url(../../images/desktop/image-soccer-team.jpg);
+      url('../images/desktop/image-soccer-team.jpg');
     @extend %image;
 
     @include respond(phone) {
       background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-        url(../../images/mobile/image-soccer-team.jpg);
+        url('../images/mobile/image-soccer-team.jpg');
     }
   }
 
   &__item-4 {
     background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-      url(../../images/desktop/image-grid.jpg);
+      url('../images/desktop/image-grid.jpg');
     @extend %image;
 
     @include respond(phone) {
       background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-        url(../../images/mobile/image-grid.jpg);
+        url('../images/mobile/image-grid.jpg');
     }
   }
 
   &__item-5 {
     background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-      url(../../images/desktop/image-from-above.jpg);
+      url('../images/desktop/image-from-above.jpg');
     @extend %image;
 
     @include respond(phone) {
       background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-        url(../../images/mobile/image-from-above.jpg);
+        url('../images/mobile/image-from-above.jpg');
     }
   }
 
   &__item-6 {
     background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-      url(../../images/desktop/image-pocket-borealis.jpg);
+      url('../images/desktop/image-pocket-borealis.jpg');
     @extend %image;
 
     @include respond(phone) {
       background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-        url(../../images/mobile/image-pocket-borealis.jpg);
+        url('../images/mobile/image-pocket-borealis.jpg');
     }
   }
 
   &__item-7 {
     background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-      url(../../images/desktop/image-curiosity.jpg);
+      url('../images/desktop/image-curiosity.jpg');
     @extend %image;
 
     @include respond(phone) {
       background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-        url(../../images/mobile/image-curiosity.jpg);
+        url('../images/mobile/image-curiosity.jpg');
     }
   }
 
   &__item-8 {
     background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-      url(../../images/desktop/image-fisheye.jpg);
+      url('../images/desktop/image-fisheye.jpg');
     @extend %image;
 
     @include respond(phone) {
       background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
-        url(../../images/mobile/image-fisheye.jpg);
+        url('../images/mobile/image-fisheye.jpg');
     }
   }
 
