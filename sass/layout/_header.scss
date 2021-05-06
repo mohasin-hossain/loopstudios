@@ -7,6 +7,11 @@
   background-repeat: no-repeat;
   padding: 4rem 0;
 
+  &__logo {
+    height: 4rem;
+    width: auto;
+  }
+
   & .hamburger {
     height: 100%;
     display: none;
@@ -17,6 +22,15 @@
     max-width: 65.5rem;
     margin-top: 13.4rem;
     padding: 4rem;
+
+    @include respond(tab-land) {
+      max-width: 55.5rem;
+      padding: 3rem;
+    }
+
+    @include respond(phone) {
+      max-width: 100%;
+    }
   }
 }
 
