@@ -1,17 +1,33 @@
 .creations {
   margin: 10rem;
 
+  @include respond(small-phone) {
+    margin: 5rem;
+  }
+
   &__heading {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    @include respond(phone) {
+      justify-content: center;
+
+      & > button {
+        display: none;
+      }
+    }
   }
 
   &__gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-template-rows: 1fr 1fr;
     grid-gap: 3rem;
     margin-top: 3rem;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__gallery > div {
@@ -22,6 +38,10 @@
     padding: 3rem;
     cursor: pointer;
     transition: all 0.3s;
+
+    @include respond(phone) {
+      height: 20rem;
+    }
 
     &:hover,
     &:focus {
@@ -35,69 +55,101 @@
   }
 
   &__item-1 {
-    background-image: linear-gradient(
-        rgba(#000, 0),
-        rgba(#000, 0.3)
-      ),
+    background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
       url(../../images/desktop/image-deep-earth.jpg);
     @extend %image;
+
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
+        url(../../images/mobile/image-deep-earth.jpg);
+    }
   }
 
   &__item-2 {
-    background-image: linear-gradient(
-        rgba(#000, 0),
-        rgba(#000, .3)
-      ),
+    background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
       url(../../images/desktop/image-night-arcade.jpg);
     @extend %image;
+
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
+        url(../../images/mobile/image-night-arcade.jpg);
+    }
   }
 
   &__item-3 {
-    background-image: linear-gradient(
-        rgba(#000, 0),
-        rgba(#000, .3)
-      ),url(../../images/desktop/image-soccer-team.jpg);
+    background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
+      url(../../images/desktop/image-soccer-team.jpg);
     @extend %image;
+
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
+        url(../../images/mobile/image-soccer-team.jpg);
+    }
   }
 
   &__item-4 {
-    background-image: linear-gradient(
-      rgba(#000, 0),
-      rgba(#000, .3)
-    ),url(../../images/desktop/image-grid.jpg);
+    background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
+      url(../../images/desktop/image-grid.jpg);
     @extend %image;
+
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
+        url(../../images/mobile/image-grid.jpg);
+    }
   }
 
   &__item-5 {
-    background-image: linear-gradient(
-      rgba(#000, 0),
-      rgba(#000, .3)
-    ),url(../../images/desktop/image-from-above.jpg);
+    background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
+      url(../../images/desktop/image-from-above.jpg);
     @extend %image;
+
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
+        url(../../images/mobile/image-from-above.jpg);
+    }
   }
 
   &__item-6 {
-    background-image: linear-gradient(
-      rgba(#000, 0),
-      rgba(#000, .3)
-    ), url(../../images/desktop/image-pocket-borealis.jpg);
+    background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
+      url(../../images/desktop/image-pocket-borealis.jpg);
     @extend %image;
+
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
+        url(../../images/mobile/image-pocket-borealis.jpg);
+    }
   }
 
   &__item-7 {
-    background-image: linear-gradient(
-      rgba(#000, 0),
-      rgba(#000, .3)
-    ), url(../../images/desktop/image-curiosity.jpg);
+    background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
+      url(../../images/desktop/image-curiosity.jpg);
     @extend %image;
 
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
+        url(../../images/mobile/image-curiosity.jpg);
+    }
   }
 
   &__item-8 {
-    background-image:linear-gradient(
-      rgba(#000, 0),
-      rgba(#000, .3)
-    ), url(../../images/desktop/image-fisheye.jpg);
+    background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
+      url(../../images/desktop/image-fisheye.jpg);
     @extend %image;
+
+    @include respond(phone) {
+      background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0.3)),
+        url(../../images/mobile/image-fisheye.jpg);
+    }
+  }
+
+  &__bottom {
+    margin: 3rem 0 8rem 0;
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+      display: flex;
+      justify-content: center;
+    }
   }
 }
