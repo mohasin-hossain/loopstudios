@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://mohasin-hossain.github.io/loopstudios/](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/loopstudios-landing-page-using-sass-scss-bem-MZVNbaRE6)
+- Live Site URL: (https://mohasin-hossain.github.io/loopstudios/)
 
 ### Built with
 
